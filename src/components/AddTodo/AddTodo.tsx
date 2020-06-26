@@ -1,7 +1,8 @@
 import React from 'react'
+import { Button } from './AddTodo.styles'
 
 const AddTodo = () => {
-  return <button type="submit">Add todo</button>
+  return <Button type="submit">Add todo</Button>
 }
 
 export default AddTodo
