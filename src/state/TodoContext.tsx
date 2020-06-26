@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import {
+  setTodosInLocalStorage,
+  getTodosInLocalStorage,
+} from '../utils/localStorage'
 
 interface Todo {
   content: string
@@ -15,8 +19,15 @@ interface TodoContextInterface {
   toggleTodoDone: (id: string) => void
 }
 
+const todosInitialState = getTodosInLocalStorage()
+
 const useTodos = (): TodoContextInterface => {
-  const [todos, setTodos] = useState<Todos>({})
+  const [todos, setTodos] = useState<Todos>(todosInitialState)
+
+  const updateTodosState = (todos: Todos) => {
+    setTodos({ ...todos })
+    setTodosInLocalStorage(todos)
+  }
 
   const createTodo = (): void => {
     const id = `todoid_${new Date().getTime()}`
@@ -25,22 +36,21 @@ const useTodos = (): TodoContextInterface => {
       content: '',
       done: false,
     }
-    setTodos({ ...todos })
+    updateTodosState(todos)
   }
-
   const deleteTodo = (id: string): void => {
     delete todos[id]
-    setTodos({ ...todos })
+    updateTodosState(todos)
   }
 
   const setTodoContent = (id: string, content: string): void => {
     todos[id].content = content
-    setTodos({ ...todos })
+    updateTodosState(todos)
   }
 
   const toggleTodoDone = (id: string): void => {
     todos[id].done = !todos[id].done
-    setTodos({ ...todos })
+    updateTodosState(todos)
   }
 
   return { todos, createTodo, deleteTodo, setTodoContent, toggleTodoDone }
