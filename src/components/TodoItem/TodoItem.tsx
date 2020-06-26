@@ -5,6 +5,7 @@ const TodoItem: React.FC<{ id: string }> = ({ id }) => {
   const {
     todos: { [id]: todo },
     setTodoContent,
+    deleteTodo,
   } = useContext(TodoContext)
   const { content } = todo
   return (
@@ -15,6 +16,7 @@ const TodoItem: React.FC<{ id: string }> = ({ id }) => {
         value={content}
         onChange={(e) => setTodoContent(id, e.target.value)}
       />
+      <button onClick={() => deleteTodo(id)}>delete</button>
     </li>
   )
 }
