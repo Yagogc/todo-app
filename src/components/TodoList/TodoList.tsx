@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { TodoContext } from '../../state/TodoContext'
 import TodoItem from '../TodoItem'
+import { Ul } from './TodoList.styles'
 
 const TodoList = () => {
   const { todos } = useContext(TodoContext)
@@ -10,11 +11,11 @@ const TodoList = () => {
     return <p>Add your first TODO</p>
   }
   return (
-    <ul>
+    <Ul>
       {todosIds.reverse().map((id) => {
         return <TodoItem id={id} key={id} />
       })}
-    </ul>
+    </Ul>
   )
 }
 

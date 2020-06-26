@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceTileContainer has default styles 1`] = `
+<body>
+  <div>
+    <ul
+      class="TodoListstyles__Ul-sc-10gobef-0 awKEB"
+    />
+  </div>
+</body>
+`;
