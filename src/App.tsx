@@ -1,12 +1,15 @@
 import React from 'react'
-import './App.css'
+import GlobalStyles from './styles/GlobalStyles'
+import MainLayout from './layouts/MainLayout'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Header</h1>
-      <div>body</div>
-    </div>
+    <>
+      <GlobalStyles />
+      <MainLayout>
+        <div>body</div>
+      </MainLayout>
+    </>
   )
 }
 
