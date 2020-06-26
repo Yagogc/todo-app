@@ -10,8 +10,8 @@ function App() {
     <TodoProvider>
       <GlobalStyles />
       <MainLayout>
-        <TodoList />
         <AddTodo />
+        <TodoList />
       </MainLayout>
     </TodoProvider>
   )
