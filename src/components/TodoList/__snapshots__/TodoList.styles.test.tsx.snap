@@ -1,10 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`P has default styles 1`] = `
+.c0 {
+  margin: 10px 0;
+  min-height: 34px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <body>
   <div>
     <p
-      class="TodoListstyles__P-sc-10gobef-0 fDwbbO"
+      class="c0"
     />
   </div>
 </body>
@@ -12,9 +25,14 @@ exports[`P has default styles 1`] = `
 
 exports[`Ul has default styles 1`] = `
 <body>
-  <div>
+  .c0 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+<div>
     <ul
-      class="TodoListstyles__Ul-sc-10gobef-1 ezsqfU"
+      class="c0"
     />
   </div>
 </body>
