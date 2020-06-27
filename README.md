@@ -18,15 +18,6 @@ The projects has been created with a service worker that fake an API endpoint so
 
 \* Based on the node version that you have already installed you may skip this step
 
-### Quick start
-
-To quickly check the app functionality, after the yarn installation, run `yarn e2e:open:prod`.
-
-This will open a Cypress and run the tests covering some of the functionality of the website against the live app at [todo.yago.pw](https://todo.yago.pw)
-Cypress has a time machine, so it's poosible to go back into the different steps covered by the tests.
-
-Note: Remember not to use a browser in Incongnito.
-
 ### Available Scripts
 
 #### `yarn start`
