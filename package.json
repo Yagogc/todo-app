@@ -6,7 +6,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:watch": "react-scripts test --watch",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "prettier src/**/*.{ts,tsx,scss,css,json}"
   },
