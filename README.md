@@ -22,7 +22,7 @@ The projects has been created with a service worker that fake an API endpoint so
 
 To quickly check the app functionality, after the yarn installation, run `yarn e2e:open:prod`.
 
-This will open a Cypress and run the tests covering some of the functionality of the website against the live app at [todo.yago.pw](todo.yago.pw)
+This will open a Cypress and run the tests covering some of the functionality of the website against the live app at [todo.yago.pw](https://todo.yago.pw)
 Cypress has a time machine, so it's poosible to go back into the different steps covered by the tests.
 
 Note: Remember not to use a browser in Incongnito.
@@ -63,9 +63,11 @@ Also for static testing, I have automated w/ husky the running of ESLint and Pre
 
 If given the time, I would had implemented E2E test with Cypress
 
-### Styling
+### Styling / UI
 
-I have used Styled-Components for the project.
+- I have used Styled-Components for the project.
+- No CSS Framework or Design Library is used
+- Icons: [Github Octicons](https://primer.style/octicons/)
 
 ### State management
 
