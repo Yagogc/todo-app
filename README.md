@@ -10,7 +10,7 @@ Have installed `nvm` and `yarn`
 
 ### Set up local enviroment
 
-- Run `nvm use` to use the node version\* which this projects uses (defined in `.nvmrc`).
+- Run `nvm use` to use the node version\* which this project uses (defined in `.nvmrc`).
 - Run `yarn` to install all the necesary dependencies.
 
 \* Based on the node version that you have already installed you may skip this step
