@@ -3,21 +3,7 @@ import {
   setTodosInLocalStorage,
   getTodosInLocalStorage,
 } from '../utils/localStorage'
-
-interface Todo {
-  content: string
-  done: boolean
-}
-
-type Todos = Record<string, Todo>
-
-interface TodoContextInterface {
-  todos: Todos
-  createTodo: () => void
-  deleteTodo: (id: string) => void
-  setTodoContent: (id: string, content: string) => void
-  toggleTodoDone: (id: string) => void
-}
+import { Todos, TodoContextInterface } from '../types'
 
 const todosInitialState = getTodosInLocalStorage()
 

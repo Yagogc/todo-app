@@ -5,7 +5,6 @@ const LayoutContainer = styled.main`
     padding: 30px;
     z-index: 10;
     position: relative;
-    border-radius: 10px;
     border: 1px solid var(--secondary-bg-color);
     background-color: white;
   `}

@@ -1,10 +1,17 @@
 import styled, { css } from 'styled-components/macro'
+import { Button as OriginalButton } from '../../styles/Button'
 
-const Button = styled.button`
+const Button = styled(OriginalButton)`
   ${() => css`
     font-size: 20px;
+    display: flex;
+    align-items: center;
 
-    &:hover {
+    > *:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    :hover {
       cursor: pointer;
     }
   `}

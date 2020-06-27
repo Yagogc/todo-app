@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
 import { TodoContext } from '../../state/TodoContext'
 import TodoItem from '../TodoItem'
-import { Ul } from './TodoList.styles'
+import { P, Ul } from './TodoList.styles'
 
 const TodoList = () => {
   const { todos } = useContext(TodoContext)
-  console.log('TodoList -> todos', todos)
   const todosIds = Object.keys(todos)
+
   if (todosIds.length === 0) {
-    return <p>Add your first TODO</p>
+    return <P data-testid="add-message">Add your first TODO</P>
   }
   return (
-    <Ul>
+    <Ul data-testid="todo-list">
       {todosIds.reverse().map((id) => {
         return <TodoItem id={id} key={id} />
       })}
