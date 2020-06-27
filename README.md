@@ -8,9 +8,6 @@ Live app: [todo.yago.pw](https://todo.yago.pw)
 
 Have installed `nvm` and `yarn`
 
-**Important: When running the project don't use a incognito browser or with extensions that may block service workers.
-The projects has been created with a service worker that fake an API endpoint so there's no need for a server.**
-
 ### Set up local enviroment
 
 - Run `nvm use` to use the node version\* which this projects uses (defined in `.nvmrc`).
