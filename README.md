@@ -55,7 +55,9 @@ This app has been created with `create react app`, for a quicker start. Personal
 I just created a few tests, a lot of things hasn't been tested for this. The libraries I have used are:
 
 - @testing-libary/react: for react components tests
+- @testing-libary/user-event: to test user events/interactions
 - jest-styled-components: for styled components tests
+- jest-localstorage-mock: to mock local storage
 
 Also for static testing, I have automated w/ husky the running of ESLint and Prettier on every pre-commit.
 
@@ -68,6 +70,8 @@ I have used Styled-Components for the project.
 ### State management
 
 Client State: Given the size of this project I have choosed to use the Context API of React, if the scope of the project were bigger I problaby have used Redux (w/ Redux Toolkit).
+
+Persistence Layer: Local storage is being used to persist the data.
 
 ### Scaffolding
 
